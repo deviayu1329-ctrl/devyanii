@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #fff7fe;
+}
+
+/* NAVBAR */
+.navbar {
+    padding: 15px 40px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    color: #ff4fa2;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #444;
+    font-weight: 500;
+}
+
+/* HERO */
+.hero {
+    background: url("https://i.imgur.com/0GQkF7q.jpeg") center/cover no-repeat;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+.hero-box {
+    text-align: center;
+}
+
+/* SECTION */
+.tema-section {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.tema-box {
+    padding: 25px;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.pink { background: #ffe3f1; }
+.colorful { background: #ffefce; }
+.choco { background: #f4e7d5; }
+
+/* PRODUK GRID */
+.produk-grid {
+    display: grid;
+    gap: 20px;
+    margin-top: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+.produk-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 15px;
+    transition: .3s;
+}
+
+.produk-card:hover {
+    transform: translateY(-5px);
+}
+
+.produk-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.price {
+    display: block;
+    margin-top: 8px;
+    color: #ff4fa2;
+    font-weight: 600;
+}
+
+/* FOOTER */
+footer {
+    background: #ffb6d9;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px){
+    .nav-menu { display: none; }
+}
+.maps-section {
+    text-align: center;
+    padding: 40px 20px;
+    background: #fff7f9;
+    margin-top: 50px;
+}
+
+.maps-section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.maps-section p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.maps-container {
+    max-width: 900px;
+    margin: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
