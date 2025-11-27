@@ -42,7 +42,7 @@ body {
 
 /* HERO */
 .hero {
-    background: url("https://i.imgur.com/0GQkF7q.jpeg") center/cover no-repeat;
+    
     height: 75vh;
     display: flex;
     align-items: center;
